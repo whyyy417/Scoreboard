@@ -32,3 +32,12 @@ function addThreeGuest(){
     scoreGuest +=  3
     scoreElGuest.textContent = scoreGuest
 };
+
+let btnLeft = document.querySelector('#btn-left');
+let btnRight = document.querySelector('#btn-right');
+let contentLeft = document.querySelector('#btn-left');
+let contentRight = document.querySelector('#btn-right');
+btnLeft.addEventListener('click',() => contentLeft.style.color = 'red');
+btnRight.addEventListener('click',() => contentRight.style.color = 'red');
+
+

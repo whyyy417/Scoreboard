@@ -6,21 +6,33 @@ body{
     display: flex;
     justify-content: space-around;
     border-radius: 20px;
-    background-color:#191970;
+    background-color: #191970;
     height: 500px;
-    width: 750px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .home{
     text-align: center;
-    width: 40%;
+    width: 30%;
+}
+
+.middle{
+    text-align: center;
+    width: 30%;
+    margin-top: 2%;
+}
+
+.Period-Poss{
+    width: 100%;
+    height: 50%;
+
 }
 
 .guest{
     text-align: center;
-    width: 40%;
+    width: 30%;
 }
 
 h3{
@@ -29,15 +41,26 @@ h3{
     font-weight: bold;
 }
 
+#timer{
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 17%;
+    width: 90%;
+    color: orangered;
+    font-size: 450%;
+    font-weight: bold;
+}
+
  #scoreHome, #scoreGuest{
     background-color: black;
     border-radius: 20px;
     border: 2px solid white;
     margin: 0;
-    height: 50%;
+    height: 35%;
     width: 100%;
     color: orangered;
-    font-size: 200px;
+    font-size: 150px;
     font-weight: bold;
  }
 
@@ -47,9 +70,46 @@ h3{
     border-radius: 10px;
     border: 1px solid white;
     width: 20%;
-    height: 10%;
+    height: 6%;
     background-color: #191970;
     color: white;
-    font-size: 30px;
+    font-size: 15px;
     cursor: pointer;
+ }
+
+
+ .btn-left, .btn-right, .period{
+    display: inline-block;
+    margin-top: 20%;
+    width: 30%;
+    vertical-align: middle;
+ }
+
+#period{
+background-color: black;
+height: 40%;
+border: 2px solid white;
+border-radius: 10px;
+color: orangered;
+font-size: 85px;
+}
+
+ #btn-left, #btn-right{
+    border: none;
+    color: grey;
+    font-size: 40px;
+    width: 55%;
+    height: 20%
+ }
+
+ h4{
+    margin: 0;
+    color: orangered;
+    font-size: 100%
+ }
+
+ h5{
+    margin: 0;
+    color: white;
+    font-size: 100%
  }
