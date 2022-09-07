@@ -1,3 +1,4 @@
+// score points
 let scoreElHome = document.getElementById("scoreHome");
 let scoreElGuest = document.getElementById("scoreGuest");
 let scoreHome = 0;
@@ -33,11 +34,30 @@ function addThreeGuest(){
     scoreElGuest.textContent = scoreGuest
 };
 
-let btnLeft = document.querySelector('#btn-left');
-let btnRight = document.querySelector('#btn-right');
+// Poss button
 let contentLeft = document.querySelector('#btn-left');
 let contentRight = document.querySelector('#btn-right');
-btnLeft.addEventListener('click',() => contentLeft.style.color = 'red');
-btnRight.addEventListener('click',() => contentRight.style.color = 'red');
 
+contentLeft.addEventListener("click", function(){
+    contentLeft.style.color = "red";
+    contentRight.style.color = "";
+})
 
+contentRight.addEventListener("click", function(){
+    contentRight.style.color = "red";
+    contentLeft.style.color = "";
+});
+
+// periods
+
+let contentPeriod = document.querySelector('#period');
+let period = 0;
+contentPeriod.addEventListener('click', function(){
+    period += 1
+    contentPeriod.textContent = period
+    if (period > 4){
+        period = 0
+        contentPeriod.textContent = period
+        return period
+    }
+});
