@@ -5,7 +5,7 @@ let scoreHome = 0;
 let scoreGuest = 0;
 
 function addOneHome(){
-    scoreHome +=  1
+    scoreHome ++
     scoreElHome.textContent = scoreHome
 };
 
@@ -61,3 +61,51 @@ contentPeriod.addEventListener('click', function(){
         return period
     }
 });
+
+//stopwatch
+
+let timeEl = document.querySelector('#timer');
+let startBtn = document.querySelector('#start');
+let stopBtn = document.querySelector('#stop');
+let resetBtn = document.querySelector('#reset');
+
+let seconds = 721;
+let interval = null;
+// timeEl.textContent = '20:00'
+startBtn.addEventListener('click', start);
+stopBtn.addEventListener('click', stop);
+resetBtn.addEventListener('click', reset);
+
+function timer(){
+    timeEl.textContent = seconds
+    seconds--
+
+    let mins = Math.floor(seconds / 60);
+    let secs = seconds % 60;
+
+    if (mins < 10) mins = '0' + mins;
+    if (secs < 10) secs = '0' + secs;
+
+    timeEl.textContent = mins + ':' + secs
+
+}
+ timer();
+
+ function start(){
+    if (interval){
+        return
+    }
+    interval = setInterval(timer, 1000);
+}
+
+function stop(){
+    clearInterval(interval);
+    interval = null;
+}
+
+function reset(){
+    stop();
+    seconds = 721;
+    timer()
+  
+}
