@@ -7,7 +7,7 @@ body{
     justify-content: space-around;
     border-radius: 20px;
     background-color: #191970;
-    height: 500px;
+    height: 450px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -48,7 +48,7 @@ h3{
     height: 17%;
     width: 100%;
     color: orangered;
-    font-size: 450%;
+    font-size: 400%;
     font-weight: bold;
 }
 
@@ -56,11 +56,11 @@ h3{
     background-color: black;
     border-radius: 20px;
     border: 2px solid white;
-    margin-top: 25%;
+    margin-top: 20%;
     height: 35%;
     width: 100%;
     color: orangered;
-    font-size: 150px;
+    font-size: 135px;
     font-weight: bold;
  }
 
@@ -80,7 +80,7 @@ h3{
 
  .btn, .period{
     display: inline-block;
-    margin-top: 10%;
+    margin-top: 5%;
     width: 30%;
     vertical-align: middle;
  }
@@ -114,3 +114,8 @@ font-size: 70px;
     color: white;
     font-size: 100%
  }
+
+#stop, #start, #reset{
+    width: 23%;
+    font-size: 80%;
+}
